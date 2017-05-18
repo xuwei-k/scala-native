@@ -264,4 +264,9 @@ object IssuesSuite extends tests.Suite {
     2.asInstanceOf[Nothing]
     2.asInstanceOf[Null]
   }
+
+  test("#695") {
+    val a = List(1, 2, 3)
+    assert(a.corresponds(a)(_ == _))
+  }
 }
