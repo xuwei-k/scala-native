@@ -4,7 +4,7 @@ import scalanative.tools.OptimizerReporter
 import scalanative.sbtplugin.ScalaNativePluginInternal._
 import scalanative.io.packageNameFromPath
 
-val sbt13Version          = "0.13.16"
+val sbt13Version          = "0.13.17-RC2"
 val sbt13ScalaVersion     = "2.10.7"
 val sbt10Version          = "1.0.4"
 val sbt10ScalaVersion     = "2.12.4"
