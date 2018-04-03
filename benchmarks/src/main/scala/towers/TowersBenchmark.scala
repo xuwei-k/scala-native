@@ -65,7 +65,7 @@ class TowersBenchmark extends benchmarks.Benchmark[Int] {
     }
   }
 
-  def moveDisks(disks: Int, fromPile: Int, toPile: Int) {
+  def moveDisks(disks: Int, fromPile: Int, toPile: Int): Unit = {
     if (disks == 1) {
       moveTopDisk(fromPile, toPile)
     } else {

@@ -122,7 +122,7 @@ object FileChannelSuite extends tests.Suite {
     }
   }
 
-  def withTemporaryDirectory(fn: Path => Unit) {
+  def withTemporaryDirectory(fn: Path => Unit): Unit = {
     val file = File.createTempFile("test", ".tmp")
     assert(file.delete())
     assert(file.mkdir())

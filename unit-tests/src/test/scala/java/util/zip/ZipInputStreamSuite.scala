@@ -148,7 +148,7 @@ object ZipInputStreamSuite extends tests.Suite {
     }
   }
 
-  private def setUp() {
+  private def setUp(): Unit = {
     zis = new ZipInputStream(new ByteArrayInputStream(zipFile))
 
     val bos   = new ByteArrayOutputStream()

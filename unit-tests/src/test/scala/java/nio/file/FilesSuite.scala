@@ -1201,7 +1201,7 @@ object FilesSuite extends tests.Suite {
     }
   }
 
-  def withTemporaryDirectory(fn: File => Unit) {
+  def withTemporaryDirectory(fn: File => Unit): Unit = {
     val file = File.createTempFile("test", ".tmp")
     assert(file.delete())
     assert(file.mkdir())

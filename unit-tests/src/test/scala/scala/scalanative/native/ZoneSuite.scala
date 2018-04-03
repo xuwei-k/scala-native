@@ -1,7 +1,7 @@
 package scala.scalanative.native
 
 object ZoneSuite extends tests.Suite {
-  private def assertAccessible(bptr: Ptr[_], n: Int) {
+  private def assertAccessible(bptr: Ptr[_], n: Int): Unit = {
     val ptr = bptr.cast[Ptr[Int]]
     var i   = 0
     while (i < n) {
